@@ -65,6 +65,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="group block w-full min-w-0 overflow-hidden rounded-xl border border-[#E4E7EC] bg-white shadow-xl transition-all hover:border-[#2761EA]/50 hover:shadow-2xl"
               title="Buka Preview Website Asli"
+              aria-label="Buka website preview asli di tab baru"
             >
               {/* Browser bar */}
               <div className="flex items-center gap-1.5 border-b border-[#E4E7EC] bg-[#F7F9FC] px-3 py-2 sm:px-3.5 sm:py-2.5">
@@ -112,6 +113,7 @@ export function Hero() {
               rel="noopener noreferrer"
               className="absolute -bottom-3 right-2 w-24 rounded-xl border-2 border-slate-800 bg-slate-900 p-0.5 shadow-2xl transition-transform hover:scale-105 sm:-bottom-5 sm:-right-2 sm:w-36 md:-right-4 sm:p-1"
               title="Buka Demo Live di HP"
+              aria-label="Buka demo live versi mobile di tab baru"
             >
               {/* Phone notch */}
               <div className="mx-auto my-1 h-0.5 w-6 sm:h-1 sm:w-10 rounded-full bg-slate-700" />
@@ -122,6 +124,7 @@ export function Hero() {
                   width={180}
                   height={270}
                   className="w-full h-auto object-cover"
+                  priority
                 />
               </div>
             </a>

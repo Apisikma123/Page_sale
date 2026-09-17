@@ -6,7 +6,6 @@ import { faqs } from "@/config/faq";
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  maximumScale: 5,
 };
 
 const jakarta = Plus_Jakarta_Sans({
@@ -24,7 +23,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pagesale.id"),
+  metadataBase: new URL("https://page-sale.vercel.app"),
   title: "Jasa Pembuatan Website UMKM Murah Mulai Rp39 Ribu | Pagesale",
   description:
     "Jasa pembuatan website 1 halaman profesional untuk UMKM & usaha kecil di Indonesia. Terima beres dalam 2-3 hari, mulai Rp39rb/bulan tanpa biaya pembuatan. Chat WhatsApp sekarang!",
@@ -43,13 +42,13 @@ export const metadata: Metadata = {
     "website siap pakai",
     "website toko online murah",
   ],
-  authors: [{ name: "Pagesale", url: "https://pagesale.id" }],
+  authors: [{ name: "Pagesale", url: "https://page-sale.vercel.app" }],
   creator: "Pagesale",
   publisher: "Pagesale",
   applicationName: "Pagesale",
   category: "business",
   alternates: {
-    canonical: "https://pagesale.id",
+    canonical: "https://page-sale.vercel.app",
   },
   icons: {
     icon: [
@@ -68,16 +67,11 @@ export const metadata: Metadata = {
     siteName: "Pagesale",
     images: [
       {
-        url: "/preview-live.webp",
+        url: "/og.webp",
         width: 1200,
         height: 630,
-        alt: "Jasa Pembuatan Website UMKM Pagesale",
-      },
-      {
-        url: "/logo.webp",
-        width: 1024,
-        height: 1024,
-        alt: "Pagesale Logo",
+        type: "image/webp",
+        alt: "Pagesale - Jasa Pembuatan Website UMKM Murah Mulai Rp39 Ribu",
       },
     ],
   },
@@ -86,7 +80,7 @@ export const metadata: Metadata = {
     title: "Jasa Pembuatan Website UMKM Murah Mulai Rp39 Ribu | Pagesale",
     description:
       "Jasa pembuatan website 1 halaman profesional untuk UMKM & usaha kecil di Indonesia. Siap 2-3 hari mulai Rp39rb/bln.",
-    images: ["/preview-live.webp"],
+    images: ["/og.webp"],
   },
   verification: {
     google: "c3e739d4426414fe",
@@ -116,10 +110,10 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "Organization",
-      "@id": "https://pagesale.id/#organization",
+      "@id": "https://page-sale.vercel.app/#organization",
       name: "Pagesale",
-      url: "https://pagesale.id",
-      logo: "https://pagesale.id/logo.webp",
+      url: "https://page-sale.vercel.app",
+      logo: "https://page-sale.vercel.app/logo.webp",
       description:
         "Jasa pembuatan website 1 halaman profesional untuk UMKM dan usaha kecil di seluruh Indonesia mulai Rp39.000/bulan tanpa biaya pembuatan di awal.",
       sameAs: ["https://www.instagram.com/pagesale._/"],
@@ -133,20 +127,20 @@ const jsonLd = {
     },
     {
       "@type": "WebSite",
-      "@id": "https://pagesale.id/#website",
-      url: "https://pagesale.id",
+      "@id": "https://page-sale.vercel.app/#website",
+      url: "https://page-sale.vercel.app",
       name: "Pagesale",
       publisher: {
-        "@id": "https://pagesale.id/#organization",
+        "@id": "https://page-sale.vercel.app/#organization",
       },
       inLanguage: "id-ID",
     },
     {
       "@type": "ProfessionalService",
-      "@id": "https://pagesale.id/#service",
+      "@id": "https://page-sale.vercel.app/#service",
       name: "Pagesale - Jasa Pembuatan Website UMKM",
-      url: "https://pagesale.id",
-      image: "https://pagesale.id/preview-live.webp",
+      url: "https://page-sale.vercel.app",
+      image: "https://page-sale.vercel.app/og.webp",
       priceRange: "Rp39.000 - Rp99.000 / bulan",
       currenciesAccepted: "IDR",
       paymentAccepted: "Transfer Bank, QRIS, E-Wallet",
@@ -156,7 +150,7 @@ const jsonLd = {
       },
       serviceType: "Jasa Pembuatan Website 1 Halaman UMKM",
       provider: {
-        "@id": "https://pagesale.id/#organization",
+        "@id": "https://page-sale.vercel.app/#organization",
       },
       hasOfferCatalog: {
         "@type": "OfferCatalog",
@@ -206,7 +200,7 @@ const jsonLd = {
     },
     {
       "@type": "HowTo",
-      "@id": "https://pagesale.id/#howto",
+      "@id": "https://page-sale.vercel.app/#howto",
       name: "Cara Membuat Website Usaha di Pagesale",
       description: "Langkah mudah memiliki website 1 halaman praktis untuk usaha kecil dan UMKM.",
       step: [
@@ -232,7 +226,7 @@ const jsonLd = {
     },
     {
       "@type": "FAQPage",
-      "@id": "https://pagesale.id/#faq",
+      "@id": "https://page-sale.vercel.app/#faq",
       mainEntity: faqs.map((faq) => ({
         "@type": "Question",
         name: faq.question,

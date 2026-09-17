@@ -1,6 +1,4 @@
-"use client";
-
-import { useState, useEffect, ReactNode, MouseEvent } from "react";
+import { ReactNode } from "react";
 import { getSafeWaUrl } from "@/utils/contactSecurity";
 
 interface SafeWhatsAppLinkProps {
@@ -20,37 +18,16 @@ export function SafeWhatsAppLink({
   ariaLabel = "Chat WhatsApp",
   id,
 }: SafeWhatsAppLinkProps) {
-  const [href, setHref] = useState<string>("#");
-
-  useEffect(() => {
-    // Generated only in real browser environment after hydration
-    setHref(getSafeWaUrl(type, message));
-  }, [type, message]);
-
-  const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
-    // If clicked before state sync or in special client
-    const targetUrl = href !== "#" ? href : getSafeWaUrl(type, message);
-    if (href === "#") {
-      e.preventDefault();
-      window.open(targetUrl, "_blank", "noopener,noreferrer");
-    }
-  };
+  const href = getSafeWaUrl(type, message);
 
   return (
     <a
       id={id}
       href={href}
       target="_blank"
-      rel="nofollow noopener noreferrer"
+      rel="noopener noreferrer"
       className={className}
       aria-label={ariaLabel}
-      onClick={handleClick}
-      onMouseEnter={() => {
-        if (href === "#") setHref(getSafeWaUrl(type, message));
-      }}
-      onTouchStart={() => {
-        if (href === "#") setHref(getSafeWaUrl(type, message));
-      }}
     >
       {children}
     </a>

@@ -40,6 +40,7 @@ export function Showcase() {
               rel="noopener noreferrer"
               className="group relative block aspect-[16/10] overflow-hidden bg-slate-100"
               title="Buka Website Contoh Usaha Mandiri"
+              aria-label="Buka demo asli website contoh di tab baru"
             >
               <Image
                 src="/preview-live.webp"

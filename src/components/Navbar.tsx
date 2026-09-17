@@ -25,7 +25,7 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 lg:px-8">
-        <a href="#" aria-label="Pagesale home">
+        <a href="/" aria-label="Halaman Beranda Pagesale">
           <PagesaleLogo className="h-7 w-auto" />
         </a>
 

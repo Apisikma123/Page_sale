@@ -1,6 +1,3 @@
-"use client";
-
-import { useState, useEffect, MouseEvent } from "react";
 import { getSafeDisplay, getSafeWaUrl } from "@/utils/contactSecurity";
 
 export function SafePhoneDisplay({
@@ -10,33 +7,19 @@ export function SafePhoneDisplay({
   type?: "primary" | "secondary";
   className?: string;
 }) {
-  const [displayText, setDisplayText] = useState<string>("");
-
-  useEffect(() => {
-    // Decoded dynamically only in client browser
-    setDisplayText(getSafeDisplay(type));
-  }, [type]);
-
-  const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const url = getSafeWaUrl(type);
-    window.open(url, "_blank", "noopener,noreferrer");
-  };
+  const displayText = getSafeDisplay(type);
+  const href = getSafeWaUrl(type);
 
   return (
     <a
-      href="#whatsapp"
-      onClick={handleClick}
+      href={href}
       target="_blank"
-      rel="nofollow noopener noreferrer"
+      rel="noopener noreferrer"
       className={className}
       title="Chat ke nomor ini via WhatsApp"
+      aria-label={`WhatsApp ${displayText}`}
     >
-      {displayText ? (
-        <span>{displayText}</span>
-      ) : (
-        <span className="inline-block h-4 w-32 animate-pulse rounded bg-slate-200/40" />
-      )}
+      {displayText}
     </a>
   );
 }

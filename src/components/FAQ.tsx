@@ -25,9 +25,11 @@ export function FAQ() {
                 className="rounded-xl border border-[#E4E7EC] bg-white"
               >
                 <button
+                  id={`faq-btn-${i}`}
                   onClick={() => setOpenIndex(isOpen ? null : i)}
                   className="flex w-full items-center justify-between px-5 py-4 text-left"
                   aria-expanded={isOpen}
+                  aria-controls={`faq-panel-${i}`}
                 >
                   <span className="text-sm font-semibold text-[#101828] pr-4">
                     {faq.question}
@@ -40,7 +42,12 @@ export function FAQ() {
                   />
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-4">
+                  <div
+                    id={`faq-panel-${i}`}
+                    role="region"
+                    aria-labelledby={`faq-btn-${i}`}
+                    className="px-5 pb-4"
+                  >
                     <p className="text-sm leading-relaxed text-[#667085]">
                       {faq.answer}
                     </p>

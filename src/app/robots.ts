@@ -22,6 +22,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: "/",
       },
     ],
-    sitemap: "https://pagesale.id/sitemap.xml",
+    sitemap: "https://page-sale.vercel.app/sitemap.xml",
   };
 }

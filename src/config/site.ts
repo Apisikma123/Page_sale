@@ -3,7 +3,7 @@ export const siteConfig = {
   title: "Pagesale | Website untuk Usaha Mulai Rp39 Ribu/Bulan",
   description:
     "Pagesale membantu UMKM dan usaha kecil di Indonesia memiliki website untuk menampilkan produk, jasa, lokasi, dan WhatsApp. Mulai Rp39 ribu per bulan.",
-  url: "https://pagesale.id",
+  url: "https://page-sale.vercel.app",
   whatsapp: {
     defaultMessage:
       "Halo Pagesale, saya tertarik membuat website untuk usaha saya.",
