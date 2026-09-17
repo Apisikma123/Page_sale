@@ -47,6 +47,8 @@ export function Showcase() {
                 alt="Contoh Website Usaha Mandiri"
                 width={800}
                 height={500}
+                sizes="(max-width: 768px) 100vw, 672px"
+                loading="lazy"
                 className="h-full w-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-black/40 opacity-0 transition-opacity group-hover:opacity-100">

@@ -10,7 +10,7 @@ export function PagesaleLogo({
   return (
     <div className={`inline-flex items-center gap-2.5 select-none ${className}`}>
       <Image
-        src="/logo.webp"
+        src="/logo-sm.webp"
         alt="Pagesale Logo"
         width={32}
         height={32}
@@ -36,7 +36,7 @@ export function PagesaleLogoWhite({
   return (
     <div className={`inline-flex items-center gap-2.5 select-none ${className}`}>
       <Image
-        src="/logo.webp"
+        src="/logo-sm.webp"
         alt="Pagesale Logo"
         width={32}
         height={32}
