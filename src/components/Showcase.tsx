@@ -16,18 +16,18 @@ export function Showcase() {
           {/* Featured Live Preview Card: Usaha Mandiri */}
           <div className="flex flex-col overflow-hidden rounded-2xl border-2 border-[#2761EA] bg-white shadow-xl transition-all hover:shadow-2xl">
             {/* Browser bar */}
-            <div className="flex items-center gap-2 border-b border-[#E4E7EC] bg-[#F7F9FC] px-4 py-3">
-              <div className="flex items-center gap-1.5">
-                <span className="h-3 w-3 rounded-full bg-[#FF5F56]" />
-                <span className="h-3 w-3 rounded-full bg-[#FFBD2E]" />
-                <span className="h-3 w-3 rounded-full bg-[#27C93F]" />
+            <div className="flex items-center gap-2 border-b border-[#E4E7EC] bg-[#F7F9FC] px-3.5 py-2.5 sm:px-4 sm:py-3">
+              <div className="flex items-center gap-1.5 shrink-0">
+                <span className="h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-[#FF5F56]" />
+                <span className="h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-[#FFBD2E]" />
+                <span className="h-2.5 w-2.5 sm:h-3 sm:w-3 rounded-full bg-[#27C93F]" />
               </div>
-              <span className="ml-2 flex flex-1 items-center justify-between rounded-md border border-[#E4E7EC] bg-white px-3 py-1.5 text-xs text-slate-700">
-                <span className="flex items-center gap-2 truncate font-mono">
-                  <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse" />
-                  {siteConfig.previewDisplay}
+              <span className="ml-1.5 flex min-w-0 flex-1 items-center justify-between rounded-md border border-[#E4E7EC] bg-white px-2.5 py-1 text-xs text-slate-700 sm:px-3 sm:py-1.5">
+                <span className="flex min-w-0 items-center gap-1.5 sm:gap-2 font-mono text-[11px] sm:text-xs">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="truncate">{siteConfig.previewDisplay}</span>
                 </span>
-                <span className="rounded bg-emerald-50 px-2 py-0.5 text-xs font-semibold text-emerald-600">
+                <span className="ml-2 shrink-0 rounded bg-emerald-50 px-2 py-0.5 text-[10px] sm:text-xs font-semibold text-emerald-600">
                   Live
                 </span>
               </span>
@@ -57,8 +57,8 @@ export function Showcase() {
             </a>
 
             {/* Card info & action */}
-            <div className="flex flex-col gap-4 border-t border-[#E4E7EC] p-5 sm:flex-row sm:items-center sm:justify-between">
-              <div>
+            <div className="flex flex-col gap-4 border-t border-[#E4E7EC] p-4 sm:p-5 sm:flex-row sm:items-center sm:justify-between">
+              <div className="min-w-0">
                 <div className="flex items-center gap-2">
                   <p className="text-base font-bold text-[#101828]">Usaha Mandiri</p>
                   <span className="rounded-full bg-[#2761EA]/10 px-2.5 py-0.5 text-xs font-semibold text-[#2761EA]">
@@ -74,7 +74,7 @@ export function Showcase() {
                 href={siteConfig.previewUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-[#2761EA] px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition-all hover:bg-[#1d4fc0] sm:text-sm"
+                className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-[#2761EA] px-5 py-2.5 text-xs font-semibold text-white shadow-sm transition-all hover:bg-[#1d4fc0] sm:text-sm w-full sm:w-auto text-center"
               >
                 Buka Website Contoh
                 <ExternalLink size={14} />
