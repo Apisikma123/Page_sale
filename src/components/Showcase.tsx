@@ -27,7 +27,7 @@ export function Showcase() {
                   <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-500 animate-pulse" />
                   <span className="truncate">{siteConfig.previewDisplay}</span>
                 </span>
-                <span className="ml-2 shrink-0 rounded bg-emerald-50 px-2 py-0.5 text-[10px] sm:text-xs font-semibold text-emerald-600">
+                <span className="ml-2 shrink-0 rounded bg-emerald-100 px-2 py-0.5 text-[10px] sm:text-xs font-bold text-emerald-900 border border-emerald-300/60">
                   Live
                 </span>
               </span>

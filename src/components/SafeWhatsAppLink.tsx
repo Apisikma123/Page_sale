@@ -15,7 +15,7 @@ export function SafeWhatsAppLink({
   message,
   children,
   className = "",
-  ariaLabel = "Chat WhatsApp",
+  ariaLabel,
   id,
 }: SafeWhatsAppLinkProps) {
   const href = getSafeWaUrl(type, message);
@@ -27,7 +27,7 @@ export function SafeWhatsAppLink({
       target="_blank"
       rel="noopener noreferrer"
       className={className}
-      aria-label={ariaLabel}
+      {...(ariaLabel ? { "aria-label": ariaLabel } : {})}
     >
       {children}
     </a>

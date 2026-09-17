@@ -21,7 +21,7 @@ export function SectionHeader({
       {subtitle && (
         <p
           className={`mt-3 text-base leading-relaxed ${
-            dark ? "text-white/80" : "text-[#667085]"
+            dark ? "text-white" : "text-[#667085]"
           }`}
         >
           {subtitle}

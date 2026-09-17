@@ -92,6 +92,7 @@ export function Hero() {
                   alt="Preview Usaha Mandiri"
                   width={600}
                   height={284}
+                  sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 448px"
                   className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.01]"
                   priority
                 />
@@ -123,6 +124,7 @@ export function Hero() {
                   alt="Preview Mobile Usaha Mandiri"
                   width={180}
                   height={270}
+                  sizes="144px"
                   className="w-full h-auto object-cover"
                   priority
                 />

@@ -31,27 +31,27 @@ export function Contact() {
         </div>
 
         {/* Contact numbers protected from scraping */}
-        <div className="mt-10 space-y-2 text-sm text-white/80">
-          <p className="font-medium text-white">WhatsApp</p>
+        <div className="mt-10 space-y-2 text-sm text-white">
+          <p className="font-semibold text-white">WhatsApp</p>
           <p>
             <SafePhoneDisplay
               type="primary"
-              className="underline decoration-white/30 underline-offset-2 hover:text-white"
+              className="text-white underline decoration-white/60 underline-offset-2 hover:text-blue-100"
             />
           </p>
           <p>
             <SafePhoneDisplay
               type="secondary"
-              className="underline decoration-white/30 underline-offset-2 hover:text-white"
+              className="text-white underline decoration-white/60 underline-offset-2 hover:text-blue-100"
             />
           </p>
-          <p className="mt-4 font-medium text-white">Instagram</p>
+          <p className="mt-4 font-semibold text-white">Instagram</p>
           <p>
             <a
               href={siteConfig.instagram.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="underline decoration-white/30 underline-offset-2 hover:text-white"
+              className="text-white underline decoration-white/60 underline-offset-2 hover:text-blue-100"
             >
               {siteConfig.instagram.handle}
             </a>
