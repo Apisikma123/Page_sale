@@ -11,7 +11,7 @@ export function Hero() {
           {/* Copy */}
           <div>
             <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-[#101828] sm:text-4xl md:text-5xl">
-              Website untuk{" "}
+              Jasa pembuatan website untuk{" "}
               <span className="text-[#2761EA]">usaha kamu.</span>
               <br />
               <span className="text-[#2761EA]">Mulai Rp39 ribu</span>/bulan.

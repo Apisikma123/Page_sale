@@ -19,19 +19,20 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://pagesale.id"),
-  title: "Pagesale | Website untuk Usaha Mulai Rp39 Ribu/Bulan",
+  title: "Jasa Pembuatan Website UMKM Murah Mulai Rp39 Ribu | Pagesale",
   description:
-    "Pagesale membantu UMKM dan usaha kecil di seluruh Indonesia memiliki website 1 halaman profesional untuk menampilkan produk, jasa, lokasi, dan WhatsApp mulai Rp39 ribu/bulan.",
+    "Jasa pembuatan website 1 halaman profesional untuk UMKM & usaha kecil di Indonesia. Terima beres dalam 2-3 hari, mulai Rp39rb/bulan tanpa biaya pembuatan. Chat WhatsApp sekarang!",
   keywords: [
     "jasa pembuatan website",
-    "website umkm",
-    "website usaha kecil",
-    "bikin web murah",
+    "jasa pembuatan website umkm",
+    "website umkm murah",
+    "bikin website murah",
     "website mulai 39 ribu",
     "landing page umkm",
     "jasa buat web usaha",
     "website profil bisnis",
     "website katalog whatsapp",
+    "jasa website terpercaya",
     "pagesale",
     "website siap pakai",
     "website toko online murah",
@@ -52,9 +53,9 @@ export const metadata: Metadata = {
     apple: [{ url: "/apple-icon.png", sizes: "180x180", type: "image/png" }],
   },
   openGraph: {
-    title: "Pagesale | Website untuk Usaha Mulai Rp39 Ribu/Bulan",
+    title: "Jasa Pembuatan Website UMKM Murah Mulai Rp39 Ribu | Pagesale",
     description:
-      "Pagesale membantu UMKM dan usaha kecil di seluruh Indonesia memiliki website 1 halaman profesional untuk menampilkan produk, jasa, lokasi, dan WhatsApp mulai Rp39 ribu/bulan.",
+      "Jasa pembuatan website 1 halaman profesional untuk UMKM & usaha kecil di Indonesia. Terima beres dalam 2-3 hari, mulai Rp39rb/bulan tanpa biaya pembuatan. Chat WhatsApp sekarang!",
     url: "https://pagesale.id",
     type: "website",
     locale: "id_ID",
@@ -64,7 +65,7 @@ export const metadata: Metadata = {
         url: "/preview-live.webp",
         width: 1200,
         height: 630,
-        alt: "Pagesale Website Preview",
+        alt: "Jasa Pembuatan Website UMKM Pagesale",
       },
       {
         url: "/logo.webp",
@@ -76,9 +77,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pagesale | Website untuk Usaha Mulai Rp39 Ribu/Bulan",
+    title: "Jasa Pembuatan Website UMKM Murah Mulai Rp39 Ribu | Pagesale",
     description:
-      "Pagesale membantu UMKM dan usaha kecil di Indonesia memiliki website untuk menampilkan produk, jasa, lokasi, dan WhatsApp.",
+      "Jasa pembuatan website 1 halaman profesional untuk UMKM & usaha kecil di Indonesia. Siap 2-3 hari mulai Rp39rb/bln.",
     images: ["/preview-live.webp"],
   },
   verification: {
@@ -114,8 +115,15 @@ const jsonLd = {
       url: "https://pagesale.id",
       logo: "https://pagesale.id/logo.webp",
       description:
-        "Jasa pembuatan website 1 halaman profesional untuk UMKM dan usaha kecil di seluruh Indonesia mulai Rp39.000/bulan.",
+        "Jasa pembuatan website 1 halaman profesional untuk UMKM dan usaha kecil di seluruh Indonesia mulai Rp39.000/bulan tanpa biaya pembuatan di awal.",
       sameAs: ["https://www.instagram.com/pagesale._/"],
+      contactPoint: {
+        "@type": "ContactPoint",
+        telephone: "+62-895-0338-6321",
+        contactType: "customer service",
+        areaServed: "ID",
+        availableLanguage: ["Indonesian"],
+      },
     },
     {
       "@type": "WebSite",
@@ -130,10 +138,12 @@ const jsonLd = {
     {
       "@type": "ProfessionalService",
       "@id": "https://pagesale.id/#service",
-      name: "Pagesale",
+      name: "Pagesale - Jasa Pembuatan Website UMKM",
       url: "https://pagesale.id",
       image: "https://pagesale.id/preview-live.webp",
       priceRange: "Rp39.000 - Rp99.000 / bulan",
+      currenciesAccepted: "IDR",
+      paymentAccepted: "Transfer Bank, QRIS, E-Wallet",
       areaServed: {
         "@type": "Country",
         name: "Indonesia",
@@ -142,6 +152,77 @@ const jsonLd = {
       provider: {
         "@id": "https://pagesale.id/#organization",
       },
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Paket Pembuatan Website Usaha Pagesale",
+        itemListElement: [
+          {
+            "@type": "Offer",
+            name: "Paket Hemat",
+            description: "Website 1 halaman usaha dengan profil dan tombol WhatsApp langsung.",
+            price: "39000",
+            priceCurrency: "IDR",
+            priceSpecification: {
+              "@type": "UnitPriceSpecification",
+              price: "39000",
+              priceCurrency: "IDR",
+              unitText: "BULAN",
+            },
+          },
+          {
+            "@type": "Offer",
+            name: "Paket Usaha",
+            description: "Website 1 halaman usaha dengan katalog produk, foto, dan lokasi Google Maps.",
+            price: "59000",
+            priceCurrency: "IDR",
+            priceSpecification: {
+              "@type": "UnitPriceSpecification",
+              price: "59000",
+              priceCurrency: "IDR",
+              unitText: "BULAN",
+            },
+          },
+          {
+            "@type": "Offer",
+            name: "Paket Pro",
+            description: "Website 1 halaman lengkap untuk usaha aktif dengan bantuan update prioritas.",
+            price: "99000",
+            priceCurrency: "IDR",
+            priceSpecification: {
+              "@type": "UnitPriceSpecification",
+              price: "99000",
+              priceCurrency: "IDR",
+              unitText: "BULAN",
+            },
+          },
+        ],
+      },
+    },
+    {
+      "@type": "HowTo",
+      "@id": "https://pagesale.id/#howto",
+      name: "Cara Membuat Website Usaha di Pagesale",
+      description: "Langkah mudah memiliki website 1 halaman praktis untuk usaha kecil dan UMKM.",
+      step: [
+        {
+          "@type": "HowToStep",
+          position: 1,
+          name: "Kirim informasi usaha",
+          text: "Kirim nama usaha, foto, produk atau jasa, alamat, dan nomor WhatsApp ke admin Pagesale.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 2,
+          name: "Pagesale buatkan website",
+          text: "Tim Pagesale menyusun semua materi menjadi website 1 halaman yang rapi dan profesional dalam 2-3 hari.",
+        },
+        {
+          "@type": "HowToStep",
+          position: 3,
+          name: "Website online & siap promosi",
+          text: "Website langsung online, siap dibagikan ke calon pelanggan di bio media sosial dan terhubung langsung ke WhatsApp.",
+        },
+      ],
     },
     {
       "@type": "FAQPage",
