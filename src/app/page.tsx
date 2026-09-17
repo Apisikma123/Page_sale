@@ -17,14 +17,30 @@ export default function Home() {
       <Navbar />
       <main className="flex-1 overflow-x-hidden">
         <Hero />
-        <Benefits />
-        <Showcase />
-        <HowItWorks />
-        <NoTech />
-        <Pricing />
-        <WhyPagesale />
-        <FAQ />
-        <Contact />
+        <div className="content-auto">
+          <Benefits />
+        </div>
+        <div className="content-auto">
+          <Showcase />
+        </div>
+        <div className="content-auto">
+          <HowItWorks />
+        </div>
+        <div className="content-auto">
+          <NoTech />
+        </div>
+        <div className="content-auto">
+          <Pricing />
+        </div>
+        <div className="content-auto">
+          <WhyPagesale />
+        </div>
+        <div className="content-auto">
+          <FAQ />
+        </div>
+        <div className="content-auto">
+          <Contact />
+        </div>
       </main>
       <Footer />
       <FloatingWhatsApp />

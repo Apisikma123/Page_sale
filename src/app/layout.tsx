@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Plus_Jakarta_Sans, Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { faqs } from "@/config/faq";
 
@@ -12,12 +12,6 @@ const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-jakarta",
-});
-
-const inter = Inter({
-  subsets: ["latin"],
-  display: "swap",
-  variable: "--font-inter",
 });
 
 export const metadata: Metadata = {
@@ -59,7 +53,7 @@ export const metadata: Metadata = {
     title: "Jasa Pembuatan Website UMKM Murah Mulai Rp39 Ribu | Pagesale",
     description:
       "Jasa pembuatan website 1 halaman profesional untuk UMKM & usaha kecil di Indonesia. Terima beres dalam 2-3 hari, mulai Rp39rb/bulan tanpa biaya pembuatan. Chat WhatsApp sekarang!",
-    url: "https://pagesale.id",
+    url: "https://page-sale.vercel.app",
     type: "website",
     locale: "id_ID",
     siteName: "Pagesale",
@@ -139,7 +133,7 @@ const jsonLd = {
       name: "Pagesale - Jasa Pembuatan Website UMKM",
       url: "https://page-sale.vercel.app",
       image: "https://page-sale.vercel.app/og.webp",
-      priceRange: "Rp39.000 - Rp99.000 / bulan",
+      priceRange: "Rp39.000 - Rp89.000 / bulan",
       currenciesAccepted: "IDR",
       paymentAccepted: "Transfer Bank, QRIS, E-Wallet",
       areaServed: {
@@ -184,11 +178,11 @@ const jsonLd = {
             "@type": "Offer",
             name: "Paket Pro",
             description: "Website 1 halaman lengkap untuk usaha aktif dengan bantuan update prioritas.",
-            price: "99000",
+            price: "89000",
             priceCurrency: "IDR",
             priceSpecification: {
               "@type": "UnitPriceSpecification",
-              price: "99000",
+              price: "89000",
               priceCurrency: "IDR",
               unitText: "BULAN",
             },
@@ -241,7 +235,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="id"
-      className={`${jakarta.variable} ${inter.variable} h-full antialiased`}
+      className={`${jakarta.variable} h-full antialiased`}
     >
       <head>
         <script
@@ -251,7 +245,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       </head>
       <body
         className="min-h-full flex flex-col font-sans"
-        style={{ fontFamily: "var(--font-inter), system-ui, sans-serif" }}
+        style={{ fontFamily: "var(--font-jakarta), system-ui, sans-serif" }}
       >
         {children}
       </body>

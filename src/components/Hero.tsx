@@ -75,8 +75,8 @@ export function Hero() {
                   <span className="h-2 w-2 sm:h-2.5 sm:w-2.5 rounded-full bg-[#27C93F]/80" />
                 </div>
                 <div className="ml-1 flex min-w-0 flex-1 items-center justify-between rounded-md border border-[#E4E7EC] bg-white px-2 py-0.5 text-xs text-[#667085] sm:px-2.5 sm:py-1">
-                  <span className="flex min-w-0 items-center gap-1 font-mono text-[11px] text-slate-700 sm:text-xs">
-                    <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="flex min-w-0 items-center gap-1.5 font-mono text-[11px] text-slate-700 sm:text-xs">
+                    <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-500 ring-2 ring-emerald-500/20" />
                     <span className="truncate">{siteConfig.previewDisplay}</span>
                   </span>
                   <ExternalLink
@@ -95,6 +95,7 @@ export function Hero() {
                   sizes="(max-width: 640px) 90vw, (max-width: 1024px) 45vw, 448px"
                   className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-[1.01]"
                   priority
+                  fetchPriority="high"
                 />
                 <div className="absolute inset-x-0 bottom-0 flex items-center justify-between bg-gradient-to-t from-black/70 via-black/30 to-transparent p-2.5 sm:p-3 text-white">
                   <span className="text-[11px] sm:text-xs font-semibold drop-shadow-sm truncate">
@@ -126,7 +127,7 @@ export function Hero() {
                   height={270}
                   sizes="144px"
                   className="w-full h-auto object-cover"
-                  priority
+                  loading="lazy"
                 />
               </div>
             </a>

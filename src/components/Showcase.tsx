@@ -24,7 +24,7 @@ export function Showcase() {
               </div>
               <span className="ml-1.5 flex min-w-0 flex-1 items-center justify-between rounded-md border border-[#E4E7EC] bg-white px-2.5 py-1 text-xs text-slate-700 sm:px-3 sm:py-1.5">
                 <span className="flex min-w-0 items-center gap-1.5 sm:gap-2 font-mono text-[11px] sm:text-xs">
-                  <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-emerald-500 ring-2 ring-emerald-500/20" />
                   <span className="truncate">{siteConfig.previewDisplay}</span>
                 </span>
                 <span className="ml-2 shrink-0 rounded bg-emerald-100 px-2 py-0.5 text-[10px] sm:text-xs font-bold text-emerald-900 border border-emerald-300/60">
